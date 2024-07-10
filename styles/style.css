@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --color-fondo1: #F3F5FC;
+    --color-fondo2: #FFFFFF;
+    --color-primario: #0A3871;
+    --color-secundario: #D8DFE8;
+    --color-resultado1: #343A40;
+    --color-resultado2: #495057;
+    --color-hover: #052051;
+    --fuente-inter: "Inter", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 40px;
+    background-color: var(--color-fondo1);
+    font-family: var(--fuente-inter);
+}
+
+.encriptador {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    gap: 2.5rem;
+
+}
+.encriptador_logo{
+    width: 7.5rem;
+    height: 3rem;
+}
+.encriptador_mensaje{
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.encriptador_titulo{
+    color: var(--color-fondo1);
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: 400;
+    border: none;
+    background-color: var(--color-fondo1);
+    color: var(--color-primario);
+}
+textarea::placeholder{
+    color: var(--color-primario);
+}
+
+.encriptador_advertencia{
+    display: flex;
+    align-items: center;
+    padding-top: 28rem;
+}
+.encriptador_advertencia_img{
+    width: 1rem;
+    height: 1rem;
+}
+.encriptador_advertencia_msj{
+    font-size: 0.75rem;
+    font-weight: 400;
+
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 400;
+    gap: 1.5rem;
+    align-items: end;
+    padding-bottom: 4.5rem;
+}
+#encriptadorBtn{
+    width: 50%;
+    padding: 1.5rem;
+    background-color: var(--color-primario);
+    color: var(--color-fondo2);
+    border-radius: 1.5rem;
+    border: none;
+}
+#desencriptadorBtn{
+    width: 50%;
+    padding: 1.5rem;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    border-radius: 1.5rem;
+    border: solid 1px var(--color-primario);
+}
+
+
+.encriptador_resultado{
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-fondo2);
+    border-radius: 2rem;
+    padding: 15rem 2rem 2rem 2rem;
+    align-items: center;
+    max-width: 25rem;
+
+}
+.resultado{
+     text-align: center;
+}
+.encriptador_resultado_img{
+    display: flex;
+}
+#tituloResultado{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-resultado1);
+    text-align: center;
+}
+.encriptador_resultado_msj{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-resultado2);
+    text-align: center;
+    max-width: 25rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+#copyBtn{
+    display: none;
+    width: 90%;
+    padding: 1.5rem;
+    background-color: var(--color-fondo2);
+    color: var(--color-primario);
+    border-radius: 1.5rem;
+    border: solid 1px var(--color-primario);
+    justify-content: center;
+}
+
+
+.footer{
+    border-top: 2px solid var(--color-secundario);
+    padding: 1.25rem;
+    text-align: center;
+    color: var(--color-primario);
+}
+
+
+@media (max-width: 1024px) {
+    .encriptador {
+        flex-direction: column;
+        align-items: center;
+    }
+    .encriptador_resultado {
+        padding: 2rem;
+    }
+    .encriptador_advertencia {
+        padding-top: 2rem;
+    }
+    .encriptador_resultado_img {
+        display: none;
+    }
+}
+
+

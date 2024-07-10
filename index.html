@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<main class="encriptador">
+    <img class="encriptador_logo" src="assets/Logo.png" alt="Logo de Alura Latam">
+    <section class="encriptador_mensaje">
+        <h1 class="encriptador_titulo">
+            Encriptador de Texto
+        </h1>
+        <textarea id="entradaTexto" placeholder="Ingrese el texto aquí"></textarea>
+        <div class="encriptador_advertencia">
+            <img class="encriptador_advertencia_img" src="assets/icono_advertencia.png">
+            <p class="encriptador_advertencia_msj" >
+                Solo letras minúsculas y sin acentos
+            </p>
+        </div>
+        <div class="btns">
+            <button id="encriptadorBtn">Encriptar</button>
+            <button id="desencriptadorBtn">Desencriptar</button>
+        </div>
+    </section>
+    <section class="encriptador_resultado">
+        <img id="resultadoImg" class="encriptador_resultado_img" src="assets/Muñeco.png">
+        <div class="resultado">
+            <p class="encriptador_resultado_msj"><strong id="tituloResultado"> Ningún mensaje fue encontrado </strong> </p>
+            <p id="subTexto"> Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <button id="copyBtn">Copiar</button>
+    </section>
+</main>
+<footer>
+    <p class="footer">Johana Sevillano - 2024</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
