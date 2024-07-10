@@ -24,7 +24,7 @@ El **Encriptador de Texto** es una aplicación web que permite encriptar y desen
 
 ## 📂 Estructura del Proyecto
 <details>
-![Estructura del Proyecto](assets/estructura.JPG)
+![Estructura del proyecto](https://github.com/johanasev/Encriptador-De-Texto/assets/63021078/17e0f217-ea3c-4b80-95c1-fc4c93586fd4)
 
 </details>
 
